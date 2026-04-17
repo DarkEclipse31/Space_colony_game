@@ -1,7 +1,7 @@
 package com.example.space_colony_game.data;
 
-import com.example.spaceapplication.model.CrewMember;
-import com.example.spaceapplication.model.Gadget;
+import com.example.space_colony_game.model.CrewMember;
+import com.example.space_colony_game.model.Gadget;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

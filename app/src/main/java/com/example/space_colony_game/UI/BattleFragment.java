@@ -1,4 +1,4 @@
-package com.example.spaceapplication.UI;
+package com.example.space_colony_game.UI;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -31,19 +31,19 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spaceapplication.MainActivity;
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.RecyclerView.GadgetAdapter;
-import com.example.spaceapplication.data.GameState;
-import com.example.spaceapplication.logic.MissionEngine;
-import com.example.spaceapplication.model.CrewMember;
-import com.example.spaceapplication.model.CrewRole;
-import com.example.spaceapplication.model.Gadget;
-import com.example.spaceapplication.model.GadgetType;
-import com.example.spaceapplication.model.Location;
-import com.example.spaceapplication.model.Mission;
-import com.example.spaceapplication.model.MissionType;
-import com.example.spaceapplication.model.Threat;
+import com.example.space_colony_game.MainActivity;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.RecyclerView.GadgetAdapter;
+import com.example.space_colony_game.data.GameState;
+import com.example.space_colony_game.logic.MissionEngine;
+import com.example.space_colony_game.model.CrewMember;
+import com.example.space_colony_game.model.CrewRole;
+import com.example.space_colony_game.model.Gadget;
+import com.example.space_colony_game.model.GadgetType;
+import com.example.space_colony_game.model.Location;
+import com.example.space_colony_game.model.Mission;
+import com.example.space_colony_game.model.MissionType;
+import com.example.space_colony_game.model.Threat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -440,8 +440,8 @@ public class BattleFragment extends Fragment {
                 // Allow the crew member to take their turn after using a gadget
                 isActionLocked = false;
                 buttonAttack.setEnabled(true);
-                buttonHeal.setVisibility(actingMember.role == com.example.spaceapplication.model.CrewRole.MEDIC ? View.VISIBLE : View.GONE);
-                buttonHeal.setEnabled(actingMember.role == com.example.spaceapplication.model.CrewRole.MEDIC);
+                buttonHeal.setVisibility(actingMember.role == com.example.space_colony_game.model.CrewRole.MEDIC ? View.VISIBLE : View.GONE);
+                buttonHeal.setEnabled(actingMember.role == com.example.space_colony_game.model.CrewRole.MEDIC);
                 buttonGadgets.setEnabled(false); // One gadget per turn
             }
         });

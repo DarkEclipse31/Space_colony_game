@@ -1,4 +1,4 @@
-package com.example.spaceapplication.RecyclerView;
+package com.example.space_colony_game.RecyclerView;
 
 import android.content.Context;
 import android.graphics.drawable.GradientDrawable;
@@ -14,8 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.model.CrewMember;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.model.CrewMember;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

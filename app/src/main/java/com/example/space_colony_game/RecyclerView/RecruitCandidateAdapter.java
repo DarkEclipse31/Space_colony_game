@@ -1,4 +1,4 @@
-package com.example.spaceapplication.RecyclerView;
+package com.example.space_colony_game.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.model.RecruitCandidate;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.model.RecruitCandidate;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +59,7 @@ public class RecruitCandidateAdapter extends RecyclerView.Adapter<RecruitCandida
         holder.tvRecruitName.setText(candidate.getName().toUpperCase());
         holder.tvRecruitRole.setText("ROLE: " + candidate.getRole().getDisplayName().toUpperCase());
         
-        if (candidate.getRole() == com.example.spaceapplication.model.CrewRole.SCIENTIST) {
+        if (candidate.getRole() == com.example.space_colony_game.model.CrewRole.SCIENTIST) {
             holder.tvRecruitStats.setText("LVL " + candidate.getLevel() + " | HP " + candidate.getHp());
         } else {
             holder.tvRecruitStats.setText(

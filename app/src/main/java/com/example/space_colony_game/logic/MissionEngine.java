@@ -1,11 +1,11 @@
 package com.example.space_colony_game.logic;
 
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.model.CrewMember;
-import com.example.spaceapplication.model.Mission;
-import com.example.spaceapplication.model.MissionDifficulty;
-import com.example.spaceapplication.model.MissionType;
-import com.example.spaceapplication.model.Threat;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.model.CrewMember;
+import com.example.space_colony_game.model.Mission;
+import com.example.space_colony_game.model.MissionDifficulty;
+import com.example.space_colony_game.model.MissionType;
+import com.example.space_colony_game.model.Threat;
 
 import java.util.ArrayList;
 import java.util.Collections;

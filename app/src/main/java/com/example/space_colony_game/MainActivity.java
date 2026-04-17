@@ -1,14 +1,14 @@
-package com.example.spaceapplication;
+package com.example.space_colony_game;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import com.example.spaceapplication.UI.StartFragment;
-import com.example.spaceapplication.data.SaveLoadManager;
-import com.example.spaceapplication.data.Storage;
-import com.example.spaceapplication.model.Pilot;
-import com.example.spaceapplication.model.Location;
+import com.example.space_colony_game.UI.StartFragment;
+import com.example.space_colony_game.data.SaveLoadManager;
+import com.example.space_colony_game.data.Storage;
+import com.example.space_colony_game.model.Pilot;
+import com.example.space_colony_game.model.Location;
 
 public class MainActivity extends AppCompatActivity {
 
