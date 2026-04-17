@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_battle_panel"
+    android:padding="16dp"
+    android:layout_margin="20dp"
+    android:minWidth="320dp">
+
+    <TextView
+        android:id="@+id/tvGadgetDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="SELECT GADGET"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGadgetSelection"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <Button
+        android:id="@+id/btnCancelGadget"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/dashboard_delete_bg"
+        android:text="CLOSE"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+</LinearLayout>

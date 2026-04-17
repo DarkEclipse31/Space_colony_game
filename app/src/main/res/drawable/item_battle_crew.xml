@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/crew_card_bg"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:minWidth="70dp">
+
+    <ImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@android:drawable/ic_menu_myplaces"
+        android:tint="#5588CC"
+        android:background="@drawable/avatar_bg"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Nova"
+        android:textColor="#CCDDEE"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+    <TextView
+        android:id="@+id/tvRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilot"
+        android:textColor="#5588CC"
+        android:textSize="9sp"/>
+
+    <ProgressBar
+        android:id="@+id/pbHp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="3dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="#FF6B6B"
+        android:progressBackgroundTint="#223344"/>
+
+    <TextView
+        android:id="@+id/tvHp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        android:textColor="#FF6B6B"
+        android:textSize="9sp"/>
+
+    <!-- Active turn highlight -->
+    <TextView
+        android:id="@+id/tvActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▶ TURN"
+        android:textColor="#FFD700"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <!-- KO overlay -->
+    <TextView
+        android:id="@+id/tvKO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KO"
+        android:textColor="#FF4444"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+</LinearLayout>

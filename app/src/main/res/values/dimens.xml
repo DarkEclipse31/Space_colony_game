@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+
+    <dimen name="dashboard_radius">22dp</dimen>
+    <dimen name="dashboard_chip_radius">14dp</dimen>
+    <dimen name="dashboard_pill_radius">18dp</dimen>
+    <dimen name="dashboard_avatar_radius">18dp</dimen>
+
+    <dimen name="dashboard_avatar_size">64dp</dimen>
+    <dimen name="dashboard_nav_height">92dp</dimen>
+</resources>
