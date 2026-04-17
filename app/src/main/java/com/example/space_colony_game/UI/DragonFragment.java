@@ -1,4 +1,4 @@
-package com.example.spaceapplication.UI;
+package com.example.space_colony_game.UI;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -11,9 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.spaceapplication.MainActivity;
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.data.GameState;
+import com.example.space_colony_game.MainActivity;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.data.GameState;
 
 public class DragonFragment extends Fragment {
 

@@ -1,6 +1,6 @@
 package com.example.space_colony_game.model;
 
-import com.example.spaceapplication.R;
+import com.example.space_colony_game.R;
 
 public class Medic extends CrewMember {
     private static final int HEAL_AMOUNT = 10;

@@ -1,13 +1,13 @@
 package com.example.space_colony_game.data;
 
-import com.example.spaceapplication.model.CrewMember;
-import com.example.spaceapplication.model.CrewRole;
-import com.example.spaceapplication.model.Engineer;
-import com.example.spaceapplication.model.Location;
-import com.example.spaceapplication.model.Medic;
-import com.example.spaceapplication.model.Pilot;
-import com.example.spaceapplication.model.Scientist;
-import com.example.spaceapplication.model.Soldier;
+import com.example.space_colony_game.model.CrewMember;
+import com.example.space_colony_game.model.CrewRole;
+import com.example.space_colony_game.model.Engineer;
+import com.example.space_colony_game.model.Location;
+import com.example.space_colony_game.model.Medic;
+import com.example.space_colony_game.model.Pilot;
+import com.example.space_colony_game.model.Scientist;
+import com.example.space_colony_game.model.Soldier;
 
 import java.util.ArrayList;
 import java.util.List;

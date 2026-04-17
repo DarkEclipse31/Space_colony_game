@@ -1,4 +1,4 @@
-package com.example.spaceapplication.UI;
+package com.example.space_colony_game.UI;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,15 +13,15 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spaceapplication.MainActivity;
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.RecyclerView.RecruitCandidateAdapter;
-import com.example.spaceapplication.data.GameState;
-import com.example.spaceapplication.data.SaveLoadManager;
-import com.example.spaceapplication.data.Storage;
-import com.example.spaceapplication.logic.RecruitmentManager;
-import com.example.spaceapplication.model.CrewMember;
-import com.example.spaceapplication.model.RecruitCandidate;
+import com.example.space_colony_game.MainActivity;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.RecyclerView.RecruitCandidateAdapter;
+import com.example.space_colony_game.data.GameState;
+import com.example.space_colony_game.data.SaveLoadManager;
+import com.example.space_colony_game.data.Storage;
+import com.example.space_colony_game.logic.RecruitmentManager;
+import com.example.space_colony_game.model.CrewMember;
+import com.example.space_colony_game.model.RecruitCandidate;
 
 import java.util.ArrayList;
 import java.util.List;

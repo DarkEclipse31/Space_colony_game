@@ -1,4 +1,4 @@
-package com.example.spaceapplication.RecyclerView;
+package com.example.space_colony_game.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.model.CrewMember;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.model.CrewMember;
 
 import java.util.ArrayList;
 import java.util.HashSet;

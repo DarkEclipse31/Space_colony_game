@@ -1,4 +1,4 @@
-package com.example.spaceapplication.RecyclerView;
+package com.example.space_colony_game.RecyclerView;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -12,9 +12,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.model.Gadget;
-import com.example.spaceapplication.model.GadgetType;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.model.Gadget;
+import com.example.space_colony_game.model.GadgetType;
 
 import java.util.List;
 
@@ -68,7 +68,7 @@ public class GadgetAdapter extends RecyclerView.Adapter<GadgetAdapter.GadgetView
         Gadget gadget = gadgetList.get(position);
         Context context = holder.itemView.getContext();
 
-        holder.ivGadgetImage.setImageResource(gadget.getImageResId());
+        holder.ivGadgetImage.setImageResource(gadget.getIconResId());
         holder.tvGadgetName.setText(gadget.getName());
         holder.tvGadgetType.setText("Type: " + gadget.getType().getDisplayName());
 

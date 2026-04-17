@@ -1,13 +1,13 @@
-package com.example.spaceapplication.logic;
+package com.example.space_colony_game.logic;
 
-import com.example.spaceapplication.data.GameState;
-import com.example.spaceapplication.data.Storage;
-import com.example.spaceapplication.model.CrewMember;
-import com.example.spaceapplication.model.CrewRole;
-import com.example.spaceapplication.model.Gadget;
-import com.example.spaceapplication.model.GadgetType;
-import com.example.spaceapplication.model.Location;
-import com.example.spaceapplication.model.Scientist;
+import com.example.space_colony_game.data.GameState;
+import com.example.space_colony_game.data.Storage;
+import com.example.space_colony_game.model.CrewMember;
+import com.example.space_colony_game.model.CrewRole;
+import com.example.space_colony_game.model.Gadget;
+import com.example.space_colony_game.model.GadgetType;
+import com.example.space_colony_game.model.Location;
+import com.example.space_colony_game.model.Scientist;
 
 import java.util.ArrayList;
 import java.util.Iterator;

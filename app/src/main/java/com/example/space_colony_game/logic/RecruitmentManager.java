@@ -1,8 +1,8 @@
-package com.example.spaceapplication.logic;
+package com.example.space_colony_game.logic;
 
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.model.CrewRole;
-import com.example.spaceapplication.model.RecruitCandidate;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.model.CrewRole;
+import com.example.space_colony_game.model.RecruitCandidate;
 
 import java.util.ArrayList;
 import java.util.List;

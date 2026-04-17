@@ -1,7 +1,7 @@
 package com.example.space_colony_game.util;
 
-import com.example.spaceapplication.R;
-import com.example.spaceapplication.model.CrewRole;
+import com.example.space_colony_game.R;
+import com.example.space_colony_game.model.CrewRole;
 
 import java.util.Random;
 
