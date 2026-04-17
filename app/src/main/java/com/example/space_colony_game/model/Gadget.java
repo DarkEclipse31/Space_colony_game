@@ -1,5 +1,5 @@
 
-package com.example.space_colony_game.data.model;
+package com.example.space_colony_game.model;
 
 import java.io.Serializable;
 

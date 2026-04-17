@@ -1,4 +1,4 @@
-package com.example.space_colony_game.data.model;
+package com.example.space_colony_game.model;
 
 import com.example.spaceapplication.R;
 import java.util.ArrayList;

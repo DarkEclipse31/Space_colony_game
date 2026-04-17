@@ -1,4 +1,4 @@
-package com.example.space_colony_game.data.model;
+package com.example.space_colony_game.model;
 
 public class RecruitCandidate {
 
