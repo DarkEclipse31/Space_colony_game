@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/crew_card_bg"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="4dp"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tvGadgetIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="🔧"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvGadgetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heal Kit"
+            android:textColor="#E8D5A3"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvGadgetType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: Support  •  +15 HP"
+            android:textColor="#5588CC"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/tvGadgetUses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uses: 3"
+            android:textColor="#4CAF50"
+            android:textSize="11sp"/>
+    </LinearLayout>
+
+</LinearLayout>

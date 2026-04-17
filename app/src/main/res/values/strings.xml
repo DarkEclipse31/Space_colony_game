@@ -1,3 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Space_colony_game</string>
+    <string name="app_name">Celestix</string>
+    <string name="welcome">Welcome to Celestix</string>
+    <string name="quarters">Quarters</string>
+    <string name="mission_control">Mission Control</string>
+    <string name="hospital">Hospital</string>
+    <string name="workshop">Workshop</string>
+    <string name="training_area">Training Area</string>
+    <string name="lunaris">Lunaris</string>
+    <string name="aethra">Aethra</string>
+    <string name="fight_dragon">Fight the Dragon</string>
+    <string name="coins">coins</string>
+    <string name="hp">HP</string>
+    <string name="exp">EXP</string>
+    <string name="level">LV</string>
+    <string name="start_button">START</string>
+    <string name="start_background_description">Start screen background</string>
+
+    <!-- Crew Adapter Strings -->
+    <string name="crew_name_label">NAME: %1$s</string>
+    <string name="crew_role_label">ROLE: %1$s</string>
+    <string name="crew_level_label">LV: %1$d</string>
+    <string name="crew_hp_label">HP: %1$d/%2$d</string>
+    <string name="status_deceased">DECEASED</string>
+    <string name="status_injured">INJURED</string>
+    <string name="status_ready">READY</string>
+
+    <!-- Gadget Adapter Strings -->
+    <string name="gadget_type_label">Type: %1$s</string>
+    <string name="gadget_effect_label">Effect: +%1$d</string>
+    <string name="gadget_uses_label">Uses left: %1$d</string>
+    <string name="gadget_used">Used</string>
+    <string name="gadget_use_button">USE</string>
+
+    <!-- Mission Adapter Strings -->
+    <string name="mission_difficulty_label">DIFFICULTY: %1$s</string>
+    <string name="mission_hp_label">HP: %1$d</string>
+    <string name="mission_reward_coins_label">+%1$d coins</string>
+    <string name="mission_reward_exp_label">+%1$d EXP</string>
+    <string name="mission_crew_limit_label">Crew: %1$d-%2$d</string>
+
+    <!-- Instructions Strings -->
+    <string name="instructions_overview_title">Overview</string>
+    <string name="instructions_overview_text">Manage your space crew, upgrade their skills, craft powerful gadgets, and complete dangerous missions to save the galaxy.</string>
+    <string name="instructions_crew_roles_title">Crew Roles</string>
+    <string name="instructions_crew_roles_text">• SOLDIER: High attack power; specializes in Combat missions.\n• PILOT: Expert navigator; increased evasion skills.\n• MEDIC: Heals wounded crew members in the Hospital and during missions.\n• SCIENTIST: Essential for crafting powerful gadgets in the Workshop.\n• ENGINEER: Maintains equipment and provides bonus repair speed.</string>
+    <string name="instructions_locations_title">Key Locations</string>
+    <string name="instructions_locations_text">• QUARTERS: View your crew and overall stats.\n• LUNARIS: Recruit new crew members (Cost: 100 coins per Level).\n• TRAINING: Level up your crew to increase their base stats.\n• WORKSHOP: Assign Scientists to craft gadgets like Medicine, Rifles, and Armour.\n• HOSPITAL: Assign Medics to heal injured crew members.\n• MISSION: Send your crew on missions. Beware: threats can attack multiple targets at once!</string>
+    <string name="instructions_combat_title">Combat &amp; Gadgets</string>
+    <string name="instructions_combat_text">• ATTACKS: Threats retaliate by hitting a random number of targets in a random order.\n• GADGETS: Use gadgets during your turn! Using a gadget doesn\'t end your turn, allowing you to follow up with an attack or heal.\n• BALANCING: Rifles (+8 Attack) and Armour (+5 Defense) are vital for surviving the Dragon Boss fight.</string>
 </resources>

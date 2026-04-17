@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="dashboard_bg_top">#091320</color>
+    <color name="dashboard_bg_bottom">#040A14</color>
+
+    <color name="dashboard_surface">#0B1624</color>
+    <color name="dashboard_surface_2">#102033</color>
+    <color name="dashboard_surface_3">#13273F</color>
+
+    <color name="dashboard_border">#1E3A5F</color>
+    <color name="dashboard_divider">#20354E</color>
+
+    <color name="dashboard_text_primary">#EAF4FF</color>
+    <color name="dashboard_text_secondary">#8FA8C3</color>
+    <color name="dashboard_text_muted">#6F86A0</color>
+
+    <color name="dashboard_cyan">#39D0FF</color>
+    <color name="dashboard_cyan_soft">#19394A</color>
+
+    <color name="dashboard_amber">#FFB84D</color>
+    <color name="dashboard_amber_soft">#3A2B16</color>
+
+    <color name="dashboard_green">#53E0B3</color>
+    <color name="dashboard_green_soft">#17342E</color>
+
+    <color name="dashboard_red">#FF6F91</color>
+    <color name="dashboard_red_soft">#3A1B24</color>
+
+    <color name="dashboard_purple">#B68CFF</color>
+    <color name="dashboard_purple_soft">#2B2142</color>
+
+    <color name="dashboard_delete_fill">#5F4596</color>
+    <color name="dashboard_delete_stroke">#8B6BDB</color>
+
+    <color name="white_08">#14FFFFFF</color>
+    <color name="white_12">#1FFFFFFF</color>
+    <color name="transparent">#00000000</color>
 </resources>
