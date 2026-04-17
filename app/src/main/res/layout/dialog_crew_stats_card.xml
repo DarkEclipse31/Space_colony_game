@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/stat_card_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/dashboard_avatar_frame_bg"
+        android:padding="4dp">
+        <ImageView
+            android:id="@+id/ivDialogPortrait"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvDialogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/dashboard_text_primary"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvDialogRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:textAllCaps="true"
+        android:textColor="@color/dashboard_text_secondary"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#1E2E4A" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDialogHp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dashboard_text_primary"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/pbDialogHp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:progressDrawable="@drawable/hp_bar_green" />
+
+        <TextView
+            android:id="@+id/tvDialogLevelXp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dashboard_text_primary"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/pbDialogXp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:progressDrawable="@drawable/xp_bar_purple" />
+
+        <TextView
+            android:id="@+id/tvDialogAttack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dashboard_text_primary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDialogResilience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dashboard_text_primary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDialogRetaliation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dashboard_text_primary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvDialogSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFD700"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btnDialogClose"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/dashboard_chip_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="CLOSE"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>
