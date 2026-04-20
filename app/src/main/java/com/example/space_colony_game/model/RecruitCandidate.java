@@ -10,7 +10,7 @@ public class RecruitCandidate {
     private final int attack;
     private final int resilience;
     private final int cost;
-    private final int profileImageResId;
+    private final int profileImageId;
 
     public RecruitCandidate(
             String name,
@@ -21,7 +21,7 @@ public class RecruitCandidate {
             int attack,
             int resilience,
             int cost,
-            int profileImageResId
+            int profileImageId
     ) {
         this.name = name;
         this.role = role;
@@ -31,7 +31,7 @@ public class RecruitCandidate {
         this.attack = attack;
         this.resilience = resilience;
         this.cost = cost;
-        this.profileImageResId = profileImageResId;
+        this.profileImageId = profileImageId;
     }
 
     public String getName() {
@@ -66,7 +66,7 @@ public class RecruitCandidate {
         return cost;
     }
 
-    public int getProfileImageResId() {
-        return profileImageResId;
+    public int getProfileImageId() {
+        return profileImageId;
     }
 }

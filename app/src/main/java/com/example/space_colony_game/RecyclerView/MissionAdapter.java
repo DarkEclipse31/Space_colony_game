@@ -46,7 +46,7 @@ public class MissionAdapter extends RecyclerView.Adapter<MissionAdapter.MissionV
     public void onBindViewHolder(@NonNull MissionViewHolder holder, int position) {
         Mission mission = missionList.get(position);
 
-        holder.ivMissionImage.setImageResource(mission.getImageResId());
+        holder.ivMissionImage.setImageResource(mission.getImageId());
         holder.tvMissionTitle.setText(mission.getTitle());
         holder.tvMissionMeta.setText(
                 "Difficulty: " + mission.getDifficultyText()

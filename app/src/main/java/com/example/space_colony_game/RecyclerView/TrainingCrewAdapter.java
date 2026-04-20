@@ -62,7 +62,7 @@ public class TrainingCrewAdapter extends RecyclerView.Adapter<TrainingCrewAdapte
         CrewMember crewMember = crewList.get(position);
         long now = System.currentTimeMillis();
 
-        holder.ivTrainingCrewProfile.setImageResource(crewMember.getProfileImageResId());
+        holder.ivTrainingCrewProfile.setImageResource(crewMember.getProfileImageId());
         holder.tvTrainingCrewName.setText(crewMember.getName().toUpperCase());
         holder.tvTrainingCrewRole.setText("ROLE: " + crewMember.getRole().getDisplayName().toUpperCase());
         holder.tvTrainingCrewStats.setText(

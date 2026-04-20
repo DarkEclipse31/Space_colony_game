@@ -10,7 +10,7 @@ public abstract class CrewMember implements Serializable {
     private final int id;
     private final String name;
     private final CrewRole role;
-    private final int profileImageResId;
+    private final int profileImageId;
 
     private Location location;
     private int level;
@@ -33,12 +33,12 @@ public abstract class CrewMember implements Serializable {
             int maxHp,
             int baseAttack,
             int resilience,
-            int profileImageResId
+            int profileImageId
     ) {
         this.id = id;
         this.name = name;
         this.role = role;
-        this.profileImageResId = profileImageResId;
+        this.profileImageId = profileImageId;
 
         this.location = Location.QUARTERS;
         this.level = 1;
@@ -67,8 +67,8 @@ public abstract class CrewMember implements Serializable {
         return role;
     }
 
-    public int getProfileImageResId() {
-        return profileImageResId;
+    public int getProfileImageId() {
+        return profileImageId;
     }
 
     public Location getLocation() {

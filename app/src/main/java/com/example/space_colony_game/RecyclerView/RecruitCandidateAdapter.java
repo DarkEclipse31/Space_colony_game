@@ -55,7 +55,7 @@ public class RecruitCandidateAdapter extends RecyclerView.Adapter<RecruitCandida
     public void onBindViewHolder(@NonNull RecruitViewHolder holder, int position) {
         RecruitCandidate candidate = candidateList.get(position);
 
-        holder.ivRecruitProfile.setImageResource(candidate.getProfileImageResId());
+        holder.ivRecruitProfile.setImageResource(candidate.getProfileImageId());
         holder.tvRecruitName.setText(candidate.getName().toUpperCase());
         holder.tvRecruitRole.setText("ROLE: " + candidate.getRole().getDisplayName().toUpperCase());
         

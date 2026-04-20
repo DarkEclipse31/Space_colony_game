@@ -225,7 +225,7 @@ public class WorkshopFragment extends Fragment {
                         + " | Cost: " + preview.getCraftCost()
                         + " | " + valueLabel + preview.getEffectValue()
         );
-        ivWorkshopPreview.setImageResource(preview.getIconResId());
+        ivWorkshopPreview.setImageResource(preview.getIconId());
 
         refreshActiveJobsSection();
     }

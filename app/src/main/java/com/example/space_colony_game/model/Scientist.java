@@ -7,8 +7,8 @@ import java.util.List;
 public class Scientist extends CrewMember {
     private List<Gadget> inventory;
     
-    public Scientist(int id, String name, int profileImageResId) {
-        super(id, name, CrewRole.SCIENTIST, 70, 0, 0, profileImageResId);
+    public Scientist(int id, String name, int profileImageId) {
+        super(id, name, CrewRole.SCIENTIST, 70, 0, 0, profileImageId);
         this.inventory = new ArrayList<>();
     }
     

@@ -66,7 +66,7 @@ public class RecruitFragment extends Fragment {
             CrewMember newCrew = Storage.getInstance().createCrewMember(
                     candidate.getName(),
                     candidate.getRole(),
-                    candidate.getProfileImageResId()
+                    candidate.getProfileImageId()
             );
 
             if (newCrew == null) {

@@ -79,17 +79,17 @@ public class QuartersCrewAdapter extends RecyclerView.Adapter<QuartersCrewAdapte
         holder.tvCrewStats.setText("LVL " + level + "   HP " + currentHp + "/" + maxHp + "   EXP " + exp);
         holder.tvCrewStatus.setText(status);
 
-        int portraitResId = readInt(
+        int portraitId = readInt(
                 crew,
                 0,
-                "getPortraitResId",
-                "getAvatarResId",
-                "getImageResId",
-                "getProfileImageResId"
+                "getPortraitId",
+                "getAvatarId",
+                "getImageId",
+                "getProfileImageId"
         );
 
-        if (portraitResId != 0) {
-            holder.ivCrewPortrait.setImageResource(portraitResId);
+        if (portraitId != 0) {
+            holder.ivCrewPortrait.setImageResource(portraitId);
         } else {
             holder.ivCrewPortrait.setImageResource(R.drawable.ic_launcher_foreground);
         }

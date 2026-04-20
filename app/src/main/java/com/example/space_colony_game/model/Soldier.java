@@ -4,8 +4,8 @@ import com.example.space_colony_game.R;
 
 public class Soldier extends CrewMember {
 
-    public Soldier(int id, String name, int profileImageResId) {
-        super(id, name, CrewRole.SOLDIER, 100, 15, 5, profileImageResId);
+    public Soldier(int id, String name, int profileImageId) {
+        super(id, name, CrewRole.SOLDIER, 100, 15, 5, profileImageId);
     }
 
     public Soldier(int id, String name, int hp, int exp) {

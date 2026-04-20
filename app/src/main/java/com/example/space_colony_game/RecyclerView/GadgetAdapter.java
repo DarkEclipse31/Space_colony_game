@@ -68,7 +68,7 @@ public class GadgetAdapter extends RecyclerView.Adapter<GadgetAdapter.GadgetView
         Gadget gadget = gadgetList.get(position);
         Context context = holder.itemView.getContext();
 
-        holder.ivGadgetImage.setImageResource(gadget.getIconResId());
+        holder.ivGadgetImage.setImageResource(gadget.getIconId());
         holder.tvGadgetName.setText(gadget.getName());
         holder.tvGadgetType.setText("Type: " + gadget.getType().getDisplayName());
 

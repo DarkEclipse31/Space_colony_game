@@ -179,17 +179,17 @@ public class BattleFragment extends Fragment {
         } else if (type == MissionType.REPAIR) {
             backgroundImageId = R.drawable.repair;
         } else if (type == MissionType.BOSS) {
-            if (this.currentMission.getImageResId() != 0) {
-                backgroundImageId = this.currentMission.getImageResId();
+            if (this.currentMission.getImageId() != 0) {
+                backgroundImageId = this.currentMission.getImageId();
             }
         }
         
         this.battleViewRoot.setBackgroundResource(backgroundImageId);
         this.labelBattleTitle.setText(this.currentMission.getTitle());
 
-        int portraitId = this.currentMission.getThreatPortraitResId();
+        int portraitId = this.currentMission.getThreatPortraitId();
         if (portraitId == 0) {
-            portraitId = this.currentMission.getImageResId();
+            portraitId = this.currentMission.getImageId();
         }
         if (portraitId == 0) {
             portraitId = R.drawable.ic_launcher_foreground;
@@ -219,7 +219,7 @@ public class BattleFragment extends Fragment {
             battleState.resilience = member.getResilience();
             battleState.maxHp = member.getMaxHp();
             battleState.currentHp = member.getHp();
-            battleState.portraitResId = member.getProfileImageResId();
+            battleState.portraitId = member.getProfileImageId();
             this.battleCrewList.add(battleState);
         }
     }
@@ -241,7 +241,7 @@ public class BattleFragment extends Fragment {
             TextView hpText = cardLayout.findViewById(R.id.tvCrewHp);
             ProgressBar pb = cardLayout.findViewById(R.id.progressCrewHp);
 
-            portrait.setImageResource(state.portraitResId);
+            portrait.setImageResource(state.portraitId);
             name.setText(state.name);
             pb.setMax(state.maxHp);
             pb.setProgress(state.currentHp);
@@ -671,7 +671,7 @@ public class BattleFragment extends Fragment {
         TextView tvSkill = dialog.findViewById(R.id.tvDialogSkill);
         TextView btnClose = dialog.findViewById(R.id.btnDialogClose);
 
-        ivPortrait.setImageResource(state.portraitResId);
+        ivPortrait.setImageResource(state.portraitId);
         tvName.setText(state.name);
         tvRole.setText("ROLE: " + state.role.getDisplayName());
         
@@ -730,7 +730,7 @@ public class BattleFragment extends Fragment {
         AlertDialog dialog = new AlertDialog.Builder(requireContext(), android.R.style.Theme_DeviceDefault_Dialog_NoActionBar).setView(dv).create();
         for (BattleCrewState target : targets) {
             View item = LayoutInflater.from(requireContext()).inflate(R.layout.item_heal_choice, container, false);
-            ((ImageView)item.findViewById(R.id.ivHealPortrait)).setImageResource(target.portraitResId);
+            ((ImageView)item.findViewById(R.id.ivHealPortrait)).setImageResource(target.portraitId);
             ((TextView)item.findViewById(R.id.tvHealName)).setText(target.name);
             ((ProgressBar)item.findViewById(R.id.progressHealHp)).setMax(target.maxHp);
             ((ProgressBar)item.findViewById(R.id.progressHealHp)).setProgress(target.currentHp);
@@ -760,7 +760,7 @@ public class BattleFragment extends Fragment {
     private static class BattleCrewState {
         CrewMember originalCrew;
         String name; CrewRole role;
-        int attack, resilience, maxHp, currentHp, portraitResId;
+        int attack, resilience, maxHp, currentHp, portraitId;
         View cardRootView; TextView labelHp; ProgressBar barHp;
     }
 }

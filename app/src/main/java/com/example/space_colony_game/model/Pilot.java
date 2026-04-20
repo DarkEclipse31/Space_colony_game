@@ -4,8 +4,8 @@ import com.example.space_colony_game.R;
 
 public class Pilot extends CrewMember {
 
-    public Pilot(int id, String name, int profileImageResId) {
-        super(id, name, CrewRole.PILOT, 80, 10, 3, profileImageResId);
+    public Pilot(int id, String name, int profileImageId) {
+        super(id, name, CrewRole.PILOT, 80, 10, 3, profileImageId);
     }
 
     public Pilot(int id, String name) {

@@ -10,8 +10,8 @@ public class Mission implements Serializable {
     private MissionType missionType;
     private Threat threat;
     private int maxCrew;
-    private int imageResId;
-    private int threatPortraitResId;
+    private int imageId;
+    private int threatPortraitId;
     private boolean dragonMission;
     private int rewardCoins;
     private int rewardExp;
@@ -19,19 +19,19 @@ public class Mission implements Serializable {
     public Mission() {
     }
 
-    public Mission(String id,String title, MissionDifficulty difficulty, MissionType missionType, Threat threat, int maxCrew, int imageResId, boolean dragonMission) {
-        this(id, title, difficulty, missionType, threat, maxCrew, imageResId, imageResId, dragonMission);
+    public Mission(String id,String title, MissionDifficulty difficulty, MissionType missionType, Threat threat, int maxCrew, int imageId, boolean dragonMission) {
+        this(id, title, difficulty, missionType, threat, maxCrew, imageId, imageId, dragonMission);
     }
 
-    public Mission(String id,String title, MissionDifficulty difficulty, MissionType missionType, Threat threat, int maxCrew, int imageResId, int threatPortraitResId, boolean dragonMission) {
+    public Mission(String id,String title, MissionDifficulty difficulty, MissionType missionType, Threat threat, int maxCrew, int imageId, int threatPortraitId, boolean dragonMission) {
         this.id = id;
         this.title = title;
         this.difficulty = difficulty;
         this.missionType = missionType;
         this.threat = threat;
         this.maxCrew = maxCrew;
-        this.imageResId = imageResId;
-        this.threatPortraitResId = threatPortraitResId;
+        this.imageId = imageId;
+        this.threatPortraitId = threatPortraitId;
         this.dragonMission = dragonMission;
 
         if (difficulty != null) {
@@ -138,21 +138,21 @@ public class Mission implements Serializable {
         return this;
     }
 
-    public int getImageResId() {
-        return imageResId;
+    public int getImageId() {
+        return imageId;
     }
 
-    public Mission setImageResId(int imageResId) {
-        this.imageResId = imageResId;
+    public Mission setImageId(int imageId) {
+        this.imageId = imageId;
         return this;
     }
 
-    public int getThreatPortraitResId() {
-        return threatPortraitResId != 0 ? threatPortraitResId : imageResId;
+    public int getThreatPortraitId() {
+        return threatPortraitId != 0 ? threatPortraitId : imageId;
     }
 
-    public Mission setThreatPortraitResId(int threatPortraitResId) {
-        this.threatPortraitResId = threatPortraitResId;
+    public Mission setThreatPortraitId(int threatPortraitId) {
+        this.threatPortraitId = threatPortraitId;
         return this;
     }
 

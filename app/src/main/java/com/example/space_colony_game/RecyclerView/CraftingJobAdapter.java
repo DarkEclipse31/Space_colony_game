@@ -44,7 +44,7 @@ public class CraftingJobAdapter extends RecyclerView.Adapter<CraftingJobAdapter.
         WorkshopManager.CraftingJob job = jobList.get(position);
         holder.tvJobScientist.setText(job.getScientistName().toUpperCase());
         holder.tvJobGadget.setText(job.getGadgetType().getDisplayName());
-        holder.ivJobGadgetIcon.setImageResource(job.getGadgetType().getIconResId());
+        holder.ivJobGadgetIcon.setImageResource(job.getGadgetType().getIconId());
         holder.tvJobOutput.setText("Yield: x" + job.getOutputCount());
 
         long now = System.currentTimeMillis();

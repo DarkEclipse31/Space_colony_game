@@ -57,7 +57,7 @@ public class HospitalCrewAdapter extends RecyclerView.Adapter<HospitalCrewAdapte
         CrewMember crewMember = crewList.get(position);
         long now = System.currentTimeMillis();
 
-        holder.ivHospitalCrewProfile.setImageResource(crewMember.getProfileImageResId());
+        holder.ivHospitalCrewProfile.setImageResource(crewMember.getProfileImageId());
         holder.tvHospitalCrewName.setText(crewMember.getName().toUpperCase(Locale.getDefault()));
         holder.tvHospitalCrewRole.setText(
                 "ROLE: " + crewMember.getRole().getDisplayName().toUpperCase(Locale.getDefault())

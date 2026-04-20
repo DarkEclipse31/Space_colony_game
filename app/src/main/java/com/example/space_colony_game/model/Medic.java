@@ -5,8 +5,8 @@ import com.example.space_colony_game.R;
 public class Medic extends CrewMember {
     private static final int HEAL_AMOUNT = 10;
 
-    public Medic(int id, String name, int profileImageResId) {
-        super(id, name, CrewRole.MEDIC, 60, 2, 1, profileImageResId);
+    public Medic(int id, String name, int profileImageId) {
+        super(id, name, CrewRole.MEDIC, 60, 2, 1, profileImageId);
     }
 
     public Medic(int id, String name, int hp, int exp) {

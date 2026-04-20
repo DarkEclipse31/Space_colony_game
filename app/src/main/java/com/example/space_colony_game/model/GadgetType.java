@@ -16,14 +16,14 @@ public enum GadgetType implements Serializable {
     private final int craftCost;
     private final int effectValue;
     private final long baseCraftMillis;
-    private final int iconResId;
+    private final int iconId;
 
-    GadgetType(String displayName, int craftCost, int effectValue, long baseCraftMillis, int iconResId) {
+    GadgetType(String displayName, int craftCost, int effectValue, long baseCraftMillis, int iconId) {
         this.displayName = displayName;
         this.craftCost = craftCost;
         this.effectValue = effectValue;
         this.baseCraftMillis = baseCraftMillis;
-        this.iconResId = iconResId;
+        this.iconId = iconId;
     }
 
     public String getDisplayName() {
@@ -42,7 +42,7 @@ public enum GadgetType implements Serializable {
         return baseCraftMillis;
     }
 
-    public int getIconResId() {
-        return iconResId;
+    public int getIconId() {
+        return iconId;
     }
 }

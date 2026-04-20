@@ -78,7 +78,7 @@ public class Storage {
         return getTotalCrewCount() < MAX_CREW_COUNT;
     }
 
-    public CrewMember createCrewMember(String name, CrewRole role, int profileImageResId) {
+    public CrewMember createCrewMember(String name, CrewRole role, int profileImageId) {
         if (name == null || name.trim().isEmpty() || role == null) {
             return null;
         }
@@ -92,15 +92,15 @@ public class Storage {
 
         switch (role) {
             case PILOT:
-                return new Pilot(id, cleanName, profileImageResId);
+                return new Pilot(id, cleanName, profileImageId);
             case ENGINEER:
-                return new Engineer(id, cleanName, profileImageResId);
+                return new Engineer(id, cleanName, profileImageId);
             case MEDIC:
-                return new Medic(id, cleanName, profileImageResId);
+                return new Medic(id, cleanName, profileImageId);
             case SCIENTIST:
-                return new Scientist(id, cleanName, profileImageResId);
+                return new Scientist(id, cleanName, profileImageId);
             case SOLDIER:
-                return new Soldier(id, cleanName, profileImageResId);
+                return new Soldier(id, cleanName, profileImageId);
             default:
                 return null;
         }

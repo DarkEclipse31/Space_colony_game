@@ -56,7 +56,7 @@ public class TrainingJobAdapter extends RecyclerView.Adapter<TrainingJobAdapter.
         long totalMillis = crewMember.getTrainingDurationMillis(testMode);
         long remainingMillis = crewMember.getRemainingTrainingMillis(now);
 
-        holder.ivCrewPortrait.setImageResource(crewMember.getProfileImageResId());
+        holder.ivCrewPortrait.setImageResource(crewMember.getProfileImageId());
         holder.tvCrewName.setText(crewMember.getName());
         holder.tvCrewMeta.setText(
                 "ROLE: " + crewMember.getRole().getDisplayName()

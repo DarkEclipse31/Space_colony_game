@@ -28,9 +28,9 @@ public class RecruitmentManager {
             int cost = level * 100;
 
             // randomizing the crew images from the given few images.
-            int imageResId=getRandomImageForRole(role);
+            int imageId=getRandomImageForRole(role);
 
-            candidates.add(new RecruitCandidate(name, role, level, hp, hp, attack, resilience, cost, imageResId));
+            candidates.add(new RecruitCandidate(name, role, level, hp, hp, attack, resilience, cost, imageId));
         }
         return candidates;
     }

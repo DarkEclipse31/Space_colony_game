@@ -10,7 +10,7 @@ public class Gadget implements Serializable {
     private final String name;
     private final int effectValue;
     private final int craftCost;
-    private final int iconResId;
+    private final int iconId;
     private int usesLeft;
 
 
@@ -19,7 +19,7 @@ public class Gadget implements Serializable {
         this.name = type.getDisplayName();
         this.effectValue = type.getEffectValue();
         this.craftCost = type.getCraftCost();
-        this.iconResId = type.getIconResId();
+        this.iconId = type.getIconId();
         this.usesLeft = 1;
     }
 
@@ -39,8 +39,8 @@ public class Gadget implements Serializable {
         return craftCost;
     }
 
-    public int getIconResId() {
-        return iconResId;
+    public int getIconId() {
+        return iconId;
     }
 
 

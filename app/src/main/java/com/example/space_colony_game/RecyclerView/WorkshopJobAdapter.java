@@ -47,7 +47,7 @@ public class WorkshopJobAdapter extends RecyclerView.Adapter<WorkshopJobAdapter.
 
         holder.tvJobScientist.setText(job.getScientistName());
         holder.tvJobOutput.setText("x" + job.getOutputCount());
-        holder.ivJobGadgetIcon.setImageResource(job.getGadgetType().getIconResId());
+        holder.ivJobGadgetIcon.setImageResource(job.getGadgetType().getIconId());
         holder.tvJobGadget.setText(job.getGadgetType().getDisplayName());
 
         long now = System.currentTimeMillis();

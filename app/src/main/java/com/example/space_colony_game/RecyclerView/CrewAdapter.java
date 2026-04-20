@@ -80,10 +80,10 @@ public class CrewAdapter extends RecyclerView.Adapter<CrewAdapter.CrewViewHolder
         holder.tvCrewRole.setText("ROLE: " + role.toUpperCase(Locale.US));
         holder.tvCrewStats.setText("LVL " + level + "   HP " + currentHp + "/" + maxHp);
 
-        int portraitResId = crew.getProfileImageResId();
+        int portraitId = crew.getProfileImageId();
 
-        if (portraitResId != 0) {
-            holder.ivCrewPortrait.setImageResource(portraitResId);
+        if (portraitId != 0) {
+            holder.ivCrewPortrait.setImageResource(portraitId);
         } else {
             holder.ivCrewPortrait.setImageResource(R.drawable.ic_launcher_foreground);
         }
